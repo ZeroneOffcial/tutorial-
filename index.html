@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerone Official</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .logo-pay img {
+      width: 80px;
+      transition: transform 0.3s;
+    }
+    .logo-pay img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-center p-4">
+  <!-- Autoplay Music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-summer.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Title -->
+  <h1 class="text-4xl md:text-5xl font-bold mb-6">
+    <span id="typing"></span>
+  </h1>
+
+  <!-- Payment Logos -->
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mt-8 logo-pay">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Dana_logo.png" alt="Dana">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/GoPay_logo.svg" alt="Gopay">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Logo_ovo_purple.svg" alt="OVO">
+    <img src="https://seeklogo.com/images/S/shopeepay-logo-01720E197A-seeklogo.com.png" alt="ShopeePay">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/QRIS_logo.png" alt="QRIS">
+  </div>
+
+  <!-- Payment Numbers -->
+  <div class="mt-12 grid gap-6 md:grid-cols-2 max-w-2xl w-full">
+    <div class="bg-white bg-opacity-10 rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-2">Dana</h2>
+      <p class="text-lg">0812-3456-7890</p>
+    </div>
+    <div class="bg-white bg-opacity-10 rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-2">Gopay</h2>
+      <p class="text-lg">0856-1234-5678</p>
+    </div>
+    <div class="bg-white bg-opacity-10 rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-2">OVO</h2>
+      <p class="text-lg">0877-6543-2109</p>
+    </div>
+    <div class="bg-white bg-opacity-10 rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-2">ShopeePay</h2>
+      <p class="text-lg">0899-1122-3344</p>
+    </div>
+  </div>
+
+  <!-- CTA Button -->
+  <a href="#" class="mt-10 bg-yellow-400 text-black px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-yellow-300 transition">
+    Bayar Sekarang
+  </a>
+
+  <script>
+    var typed = new Typed('#typing', {
+      strings: ["Pilih metode pembayaran favoritmu", "Mudah • Cepat • Aman"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
+</body>
+</html>
